@@ -1,0 +1,169 @@
+{
+  "members": [
+    {
+      "id": "MEM-001",
+      "name": "Vinay Kumbhkarn",
+      "amount": 1000
+    },
+    {
+      "id": "MEM-002",
+      "name": "vitthal kumbhkarn",
+      "amount": 1000
+    }
+  ],
+  "records": [
+    {
+      "id": "MEM-001_Jan_2026",
+      "memberId": "MEM-001",
+      "name": "Vinay Kumbhkarn",
+      "month": "Jan",
+      "year": 2026,
+      "amount": 500,
+      "status": "PAID",
+      "paymentDate": "2026-11-08 10:17"
+    },
+    {
+      "id": "MEM-001_Feb_2026",
+      "memberId": "MEM-001",
+      "name": "Vinay Kumbhkarn",
+      "month": "Feb",
+      "year": 2026,
+      "amount": 500,
+      "status": "PAID",
+      "paymentDate": "2026-11-08 10:17"
+    },
+    {
+      "id": "MEM-001_Mar_2026",
+      "memberId": "MEM-001",
+      "name": "Vinay Kumbhkarn",
+      "month": "Mar",
+      "year": 2026,
+      "amount": 500,
+      "status": "PAID",
+      "paymentDate": "2026-11-08 10:17"
+    },
+    {
+      "id": "MEM-001_Apr_2026",
+      "memberId": "MEM-001",
+      "name": "Vinay Kumbhkarn",
+      "month": "Apr",
+      "year": 2026,
+      "amount": 1000,
+      "status": "PAID",
+      "paymentDate": "2026-11-08 10:20"
+    },
+    {
+      "id": "MEM-001_May_2026",
+      "memberId": "MEM-001",
+      "name": "Vinay Kumbhkarn",
+      "month": "May",
+      "year": 2026,
+      "amount": 1000,
+      "status": "PAID",
+      "paymentDate": "2026-11-08 10:36"
+    },
+    {
+      "id": "MEM-002_Feb_2026",
+      "memberId": "MEM-002",
+      "name": "vitthal kumbhkarn",
+      "month": "Feb",
+      "year": 2026,
+      "amount": 1000,
+      "status": "PAID",
+      "paymentDate": "2026-11-08 10:44"
+    },
+    {
+      "id": "MEM-002_Mar_2026",
+      "memberId": "MEM-002",
+      "name": "vitthal kumbhkarn",
+      "month": "Mar",
+      "year": 2026,
+      "amount": 1000,
+      "status": "PAID",
+      "paymentDate": "2026-11-08 10:44"
+    },
+    {
+      "id": "MEM-002_Apr_2026",
+      "memberId": "MEM-002",
+      "name": "vitthal kumbhkarn",
+      "month": "Apr",
+      "year": 2026,
+      "amount": 1000,
+      "status": "PAID",
+      "paymentDate": "2026-11-08 10:44"
+    },
+    {
+      "id": "MEM-002_May_2026",
+      "memberId": "MEM-002",
+      "name": "vitthal kumbhkarn",
+      "month": "May",
+      "year": 2026,
+      "amount": 1000,
+      "status": "PAID",
+      "paymentDate": "2026-11-08 10:45"
+    },
+    {
+      "id": "MEM-001_Jun_2026",
+      "memberId": "MEM-001",
+      "name": "Vinay Kumbhkarn",
+      "month": "Jun",
+      "year": 2026,
+      "amount": 1000,
+      "status": "PAID",
+      "paymentDate": "2026-11-08 10:45"
+    },
+    {
+      "id": "MEM-001_Jul_2026",
+      "memberId": "MEM-001",
+      "name": "Vinay Kumbhkarn",
+      "month": "Jul",
+      "year": 2026,
+      "amount": 1000,
+      "status": "PAID",
+      "paymentDate": "2026-11-08 10:45"
+    },
+    {
+      "id": "MEM-001_Aug_2026",
+      "memberId": "MEM-001",
+      "name": "Vinay Kumbhkarn",
+      "month": "Aug",
+      "year": 2026,
+      "amount": 1000,
+      "status": "PAID",
+      "paymentDate": "2026-11-08 10:45"
+    },
+    {
+      "id": "MEM-001_Sep_2026",
+      "memberId": "MEM-001",
+      "name": "Vinay Kumbhkarn",
+      "month": "Sep",
+      "year": 2026,
+      "amount": 1000,
+      "status": "PAID",
+      "paymentDate": "2026-11-08 10:45"
+    },
+    {
+      "id": "MEM-002_Jan_2026",
+      "memberId": "MEM-002",
+      "name": "vitthal kumbhkarn",
+      "month": "Jan",
+      "year": 2026,
+      "amount": 1000,
+      "status": "PAID",
+      "paymentDate": "2026-11-08 10:48"
+    },
+    {
+      "id": "MEM-002_Jun_2026",
+      "memberId": "MEM-002",
+      "name": "vitthal kumbhkarn",
+      "month": "Jun",
+      "year": 2026,
+      "amount": 1000,
+      "status": "PAID",
+      "paymentDate": "2026-11-08 10:48"
+    }
+  ],
+  "lastSyncedAt": "2026-11-08T05:18:10.486Z",
+  "syncStatus": "CONNECTED",
+  "syncError": null
+}

@@ -170,18 +170,23 @@ app.get('/api/members/:id/history', async (req, res) => {
   }
 });
 
-// Initial Google Sheets connection attempt on startup
-const port = CONFIG.PORT;
-app.listen(port, async () => {
-  console.log(`Server listening on port ${port}`);
-  console.log(`Configured Spreadsheet ID: ${CONFIG.SPREADSHEET_ID || '(none)'}`);
-  console.log(`Configured Apps Script URL: ${CONFIG.APPS_SCRIPT_URL || '(none)'}`);
-  
-  if (CONFIG.APPS_SCRIPT_URL || CONFIG.SPREADSHEET_ID) {
-    console.log('Attempting initial Google Sheets sync...');
-    const syncRes = await storage.syncWithGoogleSheets(new Date().getFullYear());
-    console.log('Google Sheets sync result:', syncRes);
-  } else {
-    console.log('Starting in local mirrored storage mode. Google Sheets can be configured anytime.');
-  }
-});
+// Export app for Vercel serverless functions
+export default app;
+
+// Listen only when running locally (not in Vercel serverless environment)
+if (!process.env.VERCEL) {
+  const port = CONFIG.PORT;
+  app.listen(port, async () => {
+    console.log(`Server listening on port ${port}`);
+    console.log(`Configured Spreadsheet ID: ${CONFIG.SPREADSHEET_ID || '(none)'}`);
+    console.log(`Configured Apps Script URL: ${CONFIG.APPS_SCRIPT_URL || '(none)'}`);
+    
+    if (CONFIG.APPS_SCRIPT_URL || CONFIG.SPREADSHEET_ID) {
+      console.log('Attempting initial Google Sheets sync...');
+      const syncRes = await storage.syncWithGoogleSheets(new Date().getFullYear());
+      console.log('Google Sheets sync result:', syncRes);
+    } else {
+      console.log('Starting in local mirrored storage mode. Google Sheets can be configured anytime.');
+    }
+  });
+}

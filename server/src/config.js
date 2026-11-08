@@ -28,6 +28,6 @@ export const CONFIG = {
     ? process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n')
     : '',
   CREDENTIALS_FILE: process.env.GOOGLE_APPLICATION_CREDENTIALS || '',
-  DATA_DIR: path.resolve(__dirname, '../data'),
-  DB_FILE: path.resolve(__dirname, '../data/db.json'),
+  DATA_DIR: process.env.VERCEL ? '/tmp/data' : path.resolve(__dirname, '../data'),
+  DB_FILE: process.env.VERCEL ? '/tmp/data/db.json' : path.resolve(__dirname, '../data/db.json'),
 };
